@@ -1,0 +1,126 @@
+tools = [
+    {
+        "type": "function",
+        "function": {
+            "name": "get_temperature",
+            "description": "Obtiene la ultima temperatura registrada del hogar.",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": []
+            }
+        }
+    },
+     {
+            "type": "function",
+            "function": {
+                "name": "get_humidity",
+                "description": "Obtiene la ultima humedad registrada del hogar.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+    {
+        "type": "function",
+        "function": {
+            "name": "turn_on_light",
+            "description": "Enciende una luz del hogar.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "room": {
+                        "type": "string",
+                        "description": "Habitación donde está la luz."
+                    }
+                },
+                "required": ["room"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "turn_off_light",
+            "description": "Apaga una luz del hogar.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "room": {
+                        "type": "string",
+                        "description": "Habitación donde está la luz."
+                    }
+                },
+                "required": ["room"]
+            }
+        }
+    },
+        {
+        "type": "function",
+        "function": {
+            "name": "play_music",
+            "description": "Reproduce música en el hogar.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "song": {
+                        "type": "string",
+                        "description": "Nombre de la canción a reproducir."
+                    }
+                },
+                "required": ["song"]
+            }
+        }
+    },
+        {
+        "type": "function",
+        "function": {
+            "name": "home_status",
+            "description": "Obtiene el estado actual del hogar.",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": []
+            }
+        }
+    },
+        {
+        "type": "function",
+        "function": {
+            "name": "persons_registered",
+            "description": "Obtiene las ultimas personas detectadas en el ingreso al hogar.",
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": []
+            }
+        }
+    },
+    {
+            "type": "function",
+            "function": {
+                "name": "get_music_played",
+                "description": "Obtiene las ultimas canciones reproducidas en el hogar.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            }
+        },
+    {
+                "type": "function",
+                "function": {
+                    "name": "light_status",
+                    "description": "Obtiene el estado actual de las luces en el hogar.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
+            },
+
+]
