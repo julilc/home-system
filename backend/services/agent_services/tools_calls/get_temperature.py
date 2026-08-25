@@ -11,4 +11,4 @@ def get_temperature():
     if temperature_values:
         return temperature_values[0]
     else:
-        return None
+        return "No temperature data available"

@@ -1,4 +1,4 @@
-tools = [
+[
     {
         "type": "function",
         "function": {
@@ -77,7 +77,7 @@ tools = [
         {
         "type": "function",
         "function": {
-            "name": "home_status",
+            "name": "get_home_status",
             "description": "Obtiene el estado actual del hogar.",
             "parameters": {
                 "type": "object",
@@ -89,7 +89,7 @@ tools = [
         {
         "type": "function",
         "function": {
-            "name": "persons_registered",
+            "name": "get_persons_registered",
             "description": "Obtiene las ultimas personas detectadas en el ingreso al hogar.",
             "parameters": {
                 "type": "object",
@@ -121,6 +121,6 @@ tools = [
                         "required": []
                     }
                 }
-            },
+            }
 
 ]

@@ -15,7 +15,7 @@ def load_memory(id_user, top_k=10):
             reasoning_details
         FROM Memories
         WHERE id_user = ?
-        ORDER BY created_at ASC
+        ORDER BY created_at DESC
     """, top_k, id_user)
 
     rows = cursor.fetchall()
@@ -53,15 +53,22 @@ def select_temperature(top_k=1):
     cursor = conn.cursor()
 
     cursor.execute("""
-        SELECT TOP (?)
-            temperature
+        SELECT TOP (?) *
         FROM vw_Temperature
         ORDER BY created_at DESC
     """, top_k)
 
     rows = cursor.fetchall()
 
-    temperatures = [row.temperature for row in rows]
+    temperatures = [
+        {
+            "created_at": row.created_at.isoformat(),
+            "id_device": row.id_device,
+            "temperature": row.temperature
+        }
+        for row in rows
+    ]
+
 
     cursor.close()
     conn.close()
