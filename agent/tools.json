@@ -121,6 +121,18 @@
                         "required": []
                     }
                 }
+            },
+    {
+                "type": "function",
+                "function": {
+                    "name": "get_luminosity",
+                    "description": "Obtiene la ultima luminosidad registrada del hogar.",
+                    "parameters": {
+                        "type": "object",
+                        "properties": {},
+                        "required": []
+                    }
+                }
             }
 
 ]

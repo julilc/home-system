@@ -12,3 +12,5 @@ def get_persons_registered():
         return persons_registered_values[0]
     else:
         return None
+
+    

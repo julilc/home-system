@@ -212,3 +212,30 @@ def select_home_status(top_k=1):
     conn.close()
 
     return home_statuses
+
+def select_luminosity(top_k=1):
+    """
+    Selects the luminosity value from the database.
+
+    Args:
+        top_k (int): The number of latest records to retrieve. Default is 1.
+    """
+    
+    conn = get_connection_sql_server()
+    cursor = conn.cursor()
+
+    cursor.execute("""
+        SELECT TOP (?)
+            luminosity
+        FROM vw_Luminosity
+        ORDER BY created_at DESC
+    """, top_k)
+
+    rows = cursor.fetchall()
+
+    luminosities = [row.luminosity for row in rows]
+
+    cursor.close()
+    conn.close()
+
+    return luminosities

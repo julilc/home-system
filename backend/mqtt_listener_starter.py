@@ -7,5 +7,7 @@ import requests
 import json
 import os
 from backend.services.agent_services.chat import start_chat
+from backend.services.mqtt_services.mqtt_listener import mqtt_listener
 
-start_chat()
+mqtt_listener()
+

@@ -14,6 +14,8 @@ BASE_DIR = Path(__file__).resolve().parents[3]
 
 TOOLS_PATH = BASE_DIR / "agent" / "tools.json"
 
+MODEL = os.getenv("MODEL")
+
 with open(TOOLS_PATH, "r", encoding="utf-8") as f:
     TOOLS = json.load(f)
 
@@ -26,7 +28,7 @@ def call_model(messages):
             "Content-Type": "application/json"
         },
         json={
-            "model": os.getenv("MODEL"),
+            "model":MODEL,
             "messages": messages,
             "tools": TOOLS,
             "reasoning": {
@@ -77,7 +79,8 @@ def start_chat():
 
         save_message(
             id_user,
-            user_msg
+            user_msg,
+            MODEL
         )
 
         # AGENT LOOP
@@ -87,7 +90,7 @@ def start_chat():
             # -------------------------
             # Model call
             # -------------------------
-
+            print("\n[Model] Calling the model...")
             result = call_model(messages)
 
             assistant_message = result["choices"][0]["message"]
@@ -191,7 +194,8 @@ def start_chat():
 
             save_message(
                 id_user,
-                assistant_msg
+                assistant_msg,
+                MODEL
             )
 
             print("\nAssistant:")

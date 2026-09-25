@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "PIR_Motion_Sensor") (type "KiCad") (uri "${KIPRJMOD}/footprints/PIR_Motion_Sensor.pretty") (options "") (descr ""))
+)

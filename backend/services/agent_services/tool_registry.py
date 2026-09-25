@@ -12,7 +12,8 @@ from backend.services.agent_services.tools_calls import (
     get_light_status,
     turn_on_light,
     turn_off_light,
-    play_music
+    play_music,
+    get_luminosity
 )
 
 
@@ -25,5 +26,6 @@ TOOL_FUNCTIONS = {
     "get_light_status": get_light_status.get_light_status,
     "turn_on_light": turn_on_light.turn_on_light,
     "turn_off_light": turn_off_light.turn_off_light,
-    "play_music": play_music.play_music
+    "play_music": play_music.play_music,
+    "get_luminosity": get_luminosity.get_luminosity
 }
