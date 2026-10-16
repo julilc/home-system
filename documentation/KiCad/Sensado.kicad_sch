@@ -4,6 +4,12 @@
 	(generator_version "10.0")
 	(uuid "5d9ad3d7-ca66-4091-9288-6e4f30530f5e")
 	(paper "A4")
+	(title_block
+		(title "Home System")
+		(date "2026-10-09")
+		(rev "V1")
+		(company "Julieta López Ceratto")
+	)
 	(lib_symbols
 		(symbol "Device:R"
 			(pin_numbers
@@ -936,8 +942,8 @@
 		(uuid "246805a1-f6e3-4da1-a230-25a3d74a5456")
 	)
 	(rectangle
-		(start 95.25 114.3)
-		(end 157.48 158.75)
+		(start 74.93 76.2)
+		(end 88.9 81.28)
 		(stroke
 			(width 0)
 			(type default)
@@ -945,35 +951,17 @@
 		(fill
 			(type none)
 		)
-		(uuid "4f8a55e2-7fda-4658-8b2f-f6fda7a9efaf")
+		(uuid "97b4ba6e-6fb6-4e90-be7a-5dd87c7837ec")
 	)
-	(circle
-		(center 123.3624 127.553)
-		(radius 3.5921)
-		(stroke
-			(width 0.254)
-			(type solid)
-			(color 72 0 0 1)
+	(text "Desde ESP32"
+		(exclude_from_sim no)
+		(at 81.788 78.994 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
 		)
-		(fill
-			(type color)
-			(color 255 255 194 1)
-		)
-		(uuid "9dd5b588-f4a1-46aa-b87b-28ea6abc8b8c")
-	)
-	(rectangle
-		(start 118.2824 122.473)
-		(end 128.4424 135.173)
-		(stroke
-			(width 0.254)
-			(type solid)
-			(color 72 0 0 1)
-		)
-		(fill
-			(type color)
-			(color 255 255 194 1)
-		)
-		(uuid "9ddfa751-79a0-4718-b212-db117f9c39c5")
+		(uuid "88449a6b-afed-4d1a-8b28-ad54b4d861cf")
 	)
 	(junction
 		(at 139.7 101.6)
@@ -986,6 +974,16 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "851b2018-9390-48e3-a933-31de740199b0")
+	)
+	(wire
+		(pts
+			(xy 101.6 77.47) (xy 101.6 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ab94a83-312e-4064-a889-c589f3d1b9b0")
 	)
 	(wire
 		(pts
@@ -1029,13 +1027,13 @@
 	)
 	(wire
 		(pts
-			(xy 119.5524 135.173) (xy 119.5524 149.143)
+			(xy 101.6 78.74) (xy 101.6 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4b115678-bd56-40c9-b208-cd440620109f")
+		(uuid "4f65ed15-4fbd-4fce-a406-cf6e4802ec5d")
 	)
 	(wire
 		(pts
@@ -1059,6 +1057,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 78.74) (xy 101.6 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87f7b6f4-ea2c-48b0-9c26-4a73d2bc88b3")
+	)
+	(wire
+		(pts
 			(xy 133.35 69.85) (xy 148.59 69.85)
 		)
 		(stroke
@@ -1066,16 +1074,6 @@
 			(type default)
 		)
 		(uuid "99e65425-45a1-4fae-93b6-81e5efc1a601")
-	)
-	(wire
-		(pts
-			(xy 125.73 140.97) (xy 125.73 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb1ab2d2-02b5-48f1-968e-99a44167efd3")
 	)
 	(wire
 		(pts
@@ -1099,16 +1097,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.3624 135.173) (xy 123.3624 142.793)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2a7096b-1bf3-4dfb-8551-a1865a16a6be")
-	)
-	(wire
-		(pts
 			(xy 104.14 80.01) (xy 104.14 92.71)
 		)
 		(stroke
@@ -1116,16 +1104,6 @@
 			(type default)
 		)
 		(uuid "d71e19a9-ac50-47f1-a5e8-f539e374a6bd")
-	)
-	(wire
-		(pts
-			(xy 123.3624 142.793) (xy 144.9524 142.793)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d986ce9c-c24c-45de-a8a7-8b0acb2bd0a4")
 	)
 	(wire
 		(pts
@@ -1159,16 +1137,6 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 140.97) (xy 125.73 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "edc11438-c097-4182-8b12-962aec105230")
-	)
-	(wire
-		(pts
 			(xy 124.46 101.6) (xy 139.7 101.6)
 		)
 		(stroke
@@ -1186,6 +1154,16 @@
 			(type default)
 		)
 		(uuid "f49bf0f5-2daa-45b4-8bd8-6bf8277ac684")
+	)
+	(wire
+		(pts
+			(xy 88.9 77.47) (xy 101.6 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5eb2ace-fb0e-4717-a482-ce5a1ce0e028")
 	)
 	(label ""
 		(at 147.32 68.58 0)
@@ -1209,16 +1187,6 @@
 				(justify left)
 			)
 		)
-	)
-	(label "+"
-		(at 125.73 134.62 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2b6c25f1-88ec-48aa-b868-b62ef9e38f13")
 	)
 	(label ""
 		(at 147.32 68.58 0)
@@ -1289,39 +1257,6 @@
 			)
 		)
 	)
-	(label ""
-		(at 144.9441 142.793 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 0.635 0.635)
-			)
-			(justify left bottom)
-		)
-		(uuid "74d29f58-08f1-4b78-a0c8-5d1293143d90")
-		(property "Dato_Movimiento" "binary"
-			(at 144.9441 143.428 0)
-			(show_name yes)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.635 0.635)
-					(italic yes)
-				)
-				(justify left)
-			)
-		)
-	)
-	(label "PIR"
-		(at 129.7124 127.553 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8d3039f9-ac38-4da1-a1cc-cdf3b27a6be1")
-	)
 	(label "Sensado ESP32"
 		(at 116.84 52.07 0)
 		(effects
@@ -1331,26 +1266,6 @@
 			(justify left bottom)
 		)
 		(uuid "ae34309e-30bf-4d72-bfdf-1f5d277c2a6d")
-	)
-	(label "Sensado ESP32-CAM"
-		(at 116.84 111.76 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bd3433bc-4b02-41ee-bbf4-1bd8e95cf067")
-	)
-	(label "S"
-		(at 122.5568 134.1812 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cf890e17-0d36-45e1-956c-69752da61a07")
 	)
 	(label ""
 		(at 153.67 101.6 0)
@@ -1374,16 +1289,6 @@
 				(justify left)
 			)
 		)
-	)
-	(label "-"
-		(at 119.4848 134.5188 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e61fba50-b43a-4b55-9ced-d833b3342632")
 	)
 	(label ""
 		(at 147.32 68.58 0)
@@ -1579,84 +1484,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 135.89 140.97 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3e7bdca7-0109-4771-aa43-25305c315a3d")
-		(property "Reference" "#PWR07"
-			(at 139.7 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 140.462 140.716 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 135.89 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 135.89 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 135.89 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f3a6472b-ab1f-4645-8472-ea9574d3d144")
-		)
-		(instances
-			(project "home_system_fixed"
-				(path "/17a9101e-2d85-4c3c-a099-ea9623b04e2c/13150b69-0101-47b9-9478-5052092e9b7c"
-					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 147.32 82.55 90)
 		(unit 1)
@@ -1730,84 +1557,6 @@
 			(project "home_system_fixed"
 				(path "/17a9101e-2d85-4c3c-a099-ea9623b04e2c/13150b69-0101-47b9-9478-5052092e9b7c"
 					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 119.5524 149.143 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "940806ad-f690-4a5d-b747-caab714b147a")
-		(property "Reference" "#PWR08"
-			(at 119.5524 155.493 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 119.5524 154.223 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 119.5524 149.143 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 119.5524 149.143 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 119.5524 149.143 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fc326e7f-8134-4958-aaee-f36c079066c2")
-		)
-		(instances
-			(project "home_system_fixed"
-				(path "/17a9101e-2d85-4c3c-a099-ea9623b04e2c/13150b69-0101-47b9-9478-5052092e9b7c"
-					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -2130,13 +1879,6 @@
 					(unit 1)
 				)
 			)
-		)
-	)
-	(group ""
-		(uuid "75cd5ce2-ebfa-40cf-b7f7-902158846e70")
-		(members "2b6c25f1-88ec-48aa-b868-b62ef9e38f13" "8d3039f9-ac38-4da1-a1cc-cdf3b27a6be1"
-			"9dd5b588-f4a1-46aa-b87b-28ea6abc8b8c" "9ddfa751-79a0-4718-b212-db117f9c39c5"
-			"cf890e17-0d36-45e1-956c-69752da61a07" "e61fba50-b43a-4b55-9ced-d833b3342632"
 		)
 	)
 )
