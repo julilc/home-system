@@ -340,28 +340,6 @@
 		)
 		(uuid "d920598e-7853-4030-905a-84aa5f1ee6fe")
 	)
-	(rectangle
-		(start 100.33 97.79)
-		(end 123.19 100.33)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "e5fbfe37-56ed-43b1-afe2-3d26261ebb79")
-	)
-	(text "DESDE COMUNICACIÓN"
-		(exclude_from_sim no)
-		(at 112.014 99.568 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "a7c9a576-002f-4a5e-980d-26bf2fbf5874")
-	)
 	(text "ACTUADOR LED"
 		(exclude_from_sim no)
 		(at 132.08 85.09 0)
@@ -394,13 +372,49 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 99.06) (xy 134.62 99.06)
+			(xy 121.92 99.06) (xy 134.62 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fa975ad0-3081-44a9-bf77-16112bedc6fe")
+	)
+	(global_label "Actuador Led 1"
+		(shape input)
+		(at 121.92 99.06 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c8fa63b1-1bb1-49eb-9a35-5be7acfde803")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 118.6808 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "ACTUADOR_LED_1" ""
+			(at 121.92 102.9018 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -512,7 +526,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D5.0mm"
 			(at 138.43 99.06 0)
 			(hide yes)
 			(show_name no)

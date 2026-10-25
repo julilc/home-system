@@ -1,0 +1,371 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mils",
+    "date": "2026-10-16T21:27:44",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "warning"
+    ],
+    "kicad_version": "10.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/17a9101e-2d85-4c3c-a099-ea9623b04e2c",
+            "violations": [
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Hilo horizontal, longitud 630 mils",
+                            "pos": {
+                                "x": 3510.0,
+                                "y": 3100.0
+                            },
+                            "uuid": "11cd32de-f043-4e5d-9e06-aabd5d23467c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Hilo vertical, longitud 50 mils",
+                            "pos": {
+                                "x": 3510.0,
+                                "y": 3100.0
+                            },
+                            "uuid": "31fb2d64-5034-4d12-ac87-ea318a79445a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Hilo horizontal, longitud 210 mils",
+                            "pos": {
+                                "x": 3300.0,
+                                "y": 3100.0
+                            },
+                            "uuid": "fcad612a-f344-4468-9ecf-c49ee9560d39"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Hilo horizontal, longitud 590 mils",
+                            "pos": {
+                                "x": 3510.0,
+                                "y": 3150.0
+                            },
+                            "uuid": "40f54521-7f4c-4282-afc5-c64e874c79f3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Hilo horizontal, longitud 810 mils",
+                            "pos": {
+                                "x": 4140.0,
+                                "y": 2450.0
+                            },
+                            "uuid": "6ca4be57-0249-4cb6-a402-843545623b1a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Hilo vertical, longitud 650 mils",
+                            "pos": {
+                                "x": 4140.0,
+                                "y": 3100.0
+                            },
+                            "uuid": "4ebdd757-67e2-484c-af4f-ec861f4f313a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Hilo horizontal, longitud 80 mils",
+                            "pos": {
+                                "x": 4750.0,
+                                "y": 4050.0
+                            },
+                            "uuid": "358b98f6-7a0e-41d9-ae1e-759c9bbf4e4d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Hilo horizontal, longitud 320 mils",
+                            "pos": {
+                                "x": 4670.0,
+                                "y": 4050.0
+                            },
+                            "uuid": "8bcaabd3-e4ea-490c-b08b-8fd5c03ee427"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG02 Pin 1 [Salida de alimentación, Línea]",
+                            "pos": {
+                                "x": 4670.0,
+                                "y": 4050.0
+                            },
+                            "uuid": "9113a65c-0ab3-48a7-ae53-84a867f57bf7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR07 Pin 1 [Entrada de alimentación, Línea]",
+                            "pos": {
+                                "x": 2060.0,
+                                "y": 5000.0
+                            },
+                            "uuid": "0eedf6ce-562c-4048-9bfc-457f8e3bfb27"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Hilo horizontal, longitud 20 mils",
+                            "pos": {
+                                "x": 2060.0,
+                                "y": 5000.0
+                            },
+                            "uuid": "c78b4c6d-0bae-4ae1-8a2f-c0fa505d408e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Hilo horizontal, longitud 2420 mils",
+                            "pos": {
+                                "x": 2080.0,
+                                "y": 5000.0
+                            },
+                            "uuid": "13ff2273-abf5-48c1-986d-f0030883db3a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG04 Pin 1 [Salida de alimentación, Línea]",
+                            "pos": {
+                                "x": 2080.0,
+                                "y": 5000.0
+                            },
+                            "uuid": "9e21ff3b-aa00-4410-a549-a6030f5edd50"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Hilo horizontal, longitud 1180 mils",
+                            "pos": {
+                                "x": 2570.0,
+                                "y": 2700.0
+                            },
+                            "uuid": "610067c2-8da9-4d51-97f6-039a1f518fa1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Hilo horizontal, longitud 230 mils",
+                            "pos": {
+                                "x": 4040.0,
+                                "y": 2300.0
+                            },
+                            "uuid": "0bd0a8c6-02e0-4b2c-a828-70146e6e6657"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Hilo horizontal, longitud 230 mils",
+                            "pos": {
+                                "x": 4270.0,
+                                "y": 2300.0
+                            },
+                            "uuid": "5445f4f8-09f1-48d1-9ada-8fd1aee8577c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol #FLG05 Pin 1 [Salida de alimentación, Línea]",
+                            "pos": {
+                                "x": 4270.0,
+                                "y": 2300.0
+                            },
+                            "uuid": "9ae0961b-8ae0-4802-8c36-64616eca9c1e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Hilo vertical, longitud 140 mils",
+                            "pos": {
+                                "x": 8190.0,
+                                "y": 2300.0
+                            },
+                            "uuid": "7adba3e8-d0df-4e2e-ba01-456ae0d2030b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Hilo horizontal, longitud 1340 mils",
+                            "pos": {
+                                "x": 6850.0,
+                                "y": 2300.0
+                            },
+                            "uuid": "7d81ea19-2add-4ee6-b4b3-f9ed4aa6a19f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR04 Pin 1 [Entrada de alimentación, Línea]",
+                            "pos": {
+                                "x": 8190.0,
+                                "y": 2440.0
+                            },
+                            "uuid": "8b504e69-b695-4d05-9b07-d0bea084dd0e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Hilo horizontal, longitud 510 mils",
+                            "pos": {
+                                "x": 4790.0,
+                                "y": 3900.0
+                            },
+                            "uuid": "fa975ad0-3081-44a9-bf77-16112bedc6fe"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                }
+            ]
+        },
+        {
+            "path": "/Sensado/",
+            "uuid_path": "/17a9101e-2d85-4c3c-a099-ea9623b04e2c/13150b69-0101-47b9-9478-5052092e9b7c",
+            "violations": []
+        },
+        {
+            "path": "/Alimentacion/",
+            "uuid_path": "/17a9101e-2d85-4c3c-a099-ea9623b04e2c/85459a88-0909-4710-8238-1769024c77d8",
+            "violations": []
+        },
+        {
+            "path": "/Comunicacion/",
+            "uuid_path": "/17a9101e-2d85-4c3c-a099-ea9623b04e2c/e7e5dca2-b44a-4c3a-b725-243693bbe54f",
+            "violations": []
+        },
+        {
+            "path": "/Actuador/",
+            "uuid_path": "/17a9101e-2d85-4c3c-a099-ea9623b04e2c/e9a34820-6982-46d3-9501-e42289a4c66e",
+            "violations": []
+        }
+    ],
+    "source": "home_system_fixed.kicad_sch"
+}

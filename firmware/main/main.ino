@@ -12,8 +12,8 @@
 #define DHT_TYPE DHT11
 
 // --- AQUÍ DEFINES EL TÓPICO ---
-#define TOPIC_TEMP "homesysxxssa/sensors/dht11/temperature" 
-#define TOPIC_HUM "homesysxxssa/sensors/dht11/humidity"
+#define TOPIC_TEMP "homeHASIODNAOO/sensors/dht11/temperature" 
+#define TOPIC_HUM "homeHASIODNAOO/sensors/dht11/humidity"
 
 SensorDHT11 dhtSensor(DHT_PIN, DHT_TYPE);
 WiFiClient wifiClient;
