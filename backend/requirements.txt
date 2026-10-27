@@ -3,3 +3,4 @@ pyodbc
 pandas
 paho-mqtt
 dotenv
+fastapi
