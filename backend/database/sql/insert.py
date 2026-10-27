@@ -146,3 +146,39 @@ def insert_luminosity(id_device, luminosity):
 
     cursor.close()
     conn.close()
+
+
+def insert_led_status(room: str, status: str) -> None:
+    """
+    Inserts the LED status for a specific room into the database.
+
+    Args:
+        room (str): The room where the LED is located.
+        status (str): The LED status, e.g. 'ON' or 'OFF'.
+    """
+    conn = get_connection_sql_server()
+    cursor = conn.cursor()
+
+    try:
+        cursor.execute("""
+            INSERT INTO LedStatus
+            (
+                room,
+                status,
+                created_at
+            )
+            VALUES (?, ?, GETDATE())
+        """,
+            room,
+            status
+        )
+
+        conn.commit()
+
+    except Exception:
+        conn.rollback()
+        raise
+
+    finally:
+        cursor.close()
+        conn.close()

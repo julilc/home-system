@@ -1,3 +1,5 @@
 requests
 pyodbc
 pandas
+paho-mqtt
+dotenv
