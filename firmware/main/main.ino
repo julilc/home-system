@@ -4,8 +4,8 @@
 #include <string.h>
 
 // ==================== WIFI ====================
-#define WIFI_SSID "Personal-405"
-#define WIFI_PASS "20040306"
+#define WIFI_SSID ""
+#define WIFI_PASS ""
 
 // ==================== MQTT ====================
 #define MQTT_BROKER "broker.hivemq.com"
@@ -20,12 +20,12 @@
 #define LED_PIN 27
 
 // ==================== TOPICOS MQTT ====================
-#define TOPIC_TEMP "homeHASIODNAOO/sensors/dht11/temperature"
-#define TOPIC_HUM "homeHASIODNAOO/sensors/dht11/humidity"
-#define TOPIC_LUM "homeHASIODNAOO/sensors/ldr/luminosity"
+#define TOPIC_TEMP ""
+#define TOPIC_HUM ""
+#define TOPIC_LUM ""
 
-#define TOPIC_LED "homeHASIODNAOO/actuators/led"
-#define TOPIC_LED_STATUS "homeHASIODNAOO/actuators/led/status"
+#define TOPIC_LED ""
+#define TOPIC_LED_STATUS ""
 
 // ==================== OBJETOS ====================
 SensorDHT11 dhtSensor(DHT_PIN, DHT_TYPE);
